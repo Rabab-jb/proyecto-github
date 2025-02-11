@@ -37,3 +37,38 @@ Se añadieron los pasos documentados en este archivo.
 Se hizo un commit con el mensaje:
 git add README.md
 git commit -m "actualizado el readme.md"
+
+### 8. Usar `git log` y guardar el hash del primer commit en `log_com.txt`
+- Se ejecutó el comando: git log --oneline
+- Se identificó el hash del primer commit y se guardó en `log_com.txt` con el formato:
+Primer commit: HASH_DEL_PRIMER_COMMIT
+- Se realizó un commit:
+git add log_com.txt git commit -m "guardado hash del primer commit"
+
+### 9. Crear la rama `estilos`
+- Se creó una nueva rama llamada `estilos` con: git branch estilos
+- Se cambió a la rama `estilos` con: git checkout estilos
+
+### 10. En la rama `estilos`, añadir `styles.css` y darle estilos al título
+- Se creó el archivo `styles.css` con los siguientes estilos:
+h1 { color: blue; text-align: center; font-size: 2em; }
+- Se guardó y se añadió al repositorio:
+git add styles.css git commit -m "añadido styles.css con estilos para el título"
+
+
+### 11. Modificar `index.html` para enlazar `styles.css`
+- Se agregó la siguiente línea en `<head>` de `index.html`:
+
+### 12. Commit "agregado css"
+- Se realizó un commit con el mensaje: git add .
+git commit -m "agregado css"
+
+### 13. Fusionar estilos en main
+- Se cambió a la rama main con el comando: git checkout main.
+- Se fusionó la rama estilos en main: git merge estilos
+
+## 14. Actualizar README.md con estos pasos
+- Se añadieron los pasos realizados en este archivo.
+
+
+
